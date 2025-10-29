@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get in Touch — M. Nurhakim</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">✦</span>
+    <a href="index.html" class="brand-name">M. Nurhakim</a>
+  </div>
+
+  <!-- Hamburger button -->
+  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+  <nav aria-label="Primary" class="nav-wrap">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="skills.html">Skills</a></li>
+    </ul>
+    <a href="contact.html" class="cta">Get in Touch</a>
+  </nav>
+</header>
+  <main id="main" class="content">
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <p>Have an opportunity or collaboration? Send me a message below.</p>
+      <form id="contactForm" novalidate aria-describedby="formHelp">
+        <div class="field">
+          <label for="name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required />
+        </div>
+        <div class="field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="e.g., jane@example.com" required />
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="How can I help?" />
+        </div>
+        <div class="field">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+        <div class="field">
+          <label for="contact">Preferred Contact</label>
+          <select id="contact" name="contact">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn secondary">Reset</button>
+        </div>
+        <p id="formHelp" class="help">Fields marked with * are required.</p>
+      </form>
+
+      <section id="output" class="output" aria-live="polite" aria-atomic="true">
+        <!-- Submitted data will appear here -->
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2025 M. Nurhakim. Built with HTML, CSS & JS. <span class="sr-only">End of page</span></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
